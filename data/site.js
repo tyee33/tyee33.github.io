@@ -20,7 +20,7 @@ window.PORTFOLIO.site = {
   status: '开放远程与合作机会',            // 状态药丸文案，不需要就设为空字符串 ''
 
   /* ---- 联系方式 ---- */
-  email: 'tyee33@example.com',           // ← 改这里
+  email: 'tye3@qq.com',           // ← 改这里
   resume: 'assets/resume.pdf',           // 简历文件路径（替换 assets/resume.pdf）
   siteUrl: 'https://tyee33.github.io/',  // 线上地址，用于分享卡片
 
@@ -64,7 +64,7 @@ window.PORTFOLIO.site = {
          wechat 这类没有链接的，用 copy 字段，点击自动复制 ---- */
   socials: [
     { label: 'GitHub',   href: 'https://github.com/tyee33', icon: 'github' },
-    { label: 'Email',    href: 'mailto:tyee33@example.com',  icon: 'mail' },
+    { label: 'Email',    href: 'mailto:tye3@qq.com',  icon: 'mail' },
     { label: 'X',        href: 'https://x.com/',             icon: 'x' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/',  icon: 'linkedin' },
     { label: '知乎',     href: 'https://www.zhihu.com/',     icon: 'zhihu' },
@@ -73,7 +73,7 @@ window.PORTFOLIO.site = {
 
   /* ---- 页脚 ---- */
   footer: {
-    note: '原生 HTML / CSS / JS 手写 · 托管于 GitHub Pages',
+    note: '原生 HTML / CSS / JS · 托管于 GitHub Pages',
     copyrightFrom: 2026                   // 页脚年份显示为 2026 或 2026–当前年
   }
 };
