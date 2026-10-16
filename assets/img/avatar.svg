@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-label="头像占位图">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="16%" r="82%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".17"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="figure" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".38"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#ffffff" stroke-opacity=".07"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="480" fill="#0a0a0c"/>
+  <rect width="480" height="480" fill="url(#grid)"/>
+  <rect width="480" height="480" fill="url(#glow)"/>
+  <circle cx="240" cy="186" r="74" fill="url(#figure)"/>
+  <path d="M96 480c0-84 64-150 144-150s144 66 144 150Z" fill="url(#figure)"/>
+  <circle cx="240" cy="240" r="216" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+</svg>

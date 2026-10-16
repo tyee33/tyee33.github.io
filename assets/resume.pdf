@@ -1,0 +1,46 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 793 >>
+stream
+BT /F1 26 Tf 72 760 Td (PLACEHOLDER RESUME) Tj ET
+BT /F2 12 Tf 72 730 Td (Replace this file with your own PDF: assets/resume.pdf) Tj ET
+BT /F2 12 Tf 72 700 Td (Name:      tyee33) Tj ET
+BT /F2 12 Tf 72 682 Td (Role:      Full-stack Developer / AI Applications) Tj ET
+BT /F2 12 Tf 72 664 Td (Site:      https://tyee33.github.io/) Tj ET
+BT /F2 12 Tf 72 646 Td (Email:     tyee33@example.com) Tj ET
+BT /F2 11 Tf 72 590 Td (How to replace:) Tj ET
+BT /F2 11 Tf 72 572 Td (1. Export your resume as PDF.) Tj ET
+BT /F2 11 Tf 72 554 Td (2. Save it as assets/resume.pdf, overwriting this file.) Tj ET
+BT /F2 11 Tf 72 536 Td (3. Commit and push -- the download button keeps working, no code change needed.) Tj ET
+BT /F2 11 Tf 72 480 Td (This placeholder exists only so the download link never 404s.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000001095 00000 n 
+0000001170 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1240
+%%EOF

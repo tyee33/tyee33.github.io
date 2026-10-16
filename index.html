@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>tyee33 · Portfolio</title>
+<meta name="description" content="tyee33 的个人作品集 —— 全栈开发 / AI 应用。精选项目、技能栈、工作经历与技术文章。">
+<meta name="author" content="tyee33">
+<meta name="theme-color" content="#050506" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f5f6" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
+<link rel="canonical" href="https://tyee33.github.io/">
+
+<!-- 社交分享卡片：把 og.png 换成你自己的图（1200×630） -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="tyee33">
+<meta property="og:title" content="tyee33 · Portfolio">
+<meta property="og:description" content="全栈开发 / AI 应用 —— 精选项目、技能栈与技术文章。">
+<meta property="og:url" content="https://tyee33.github.io/">
+<meta property="og:image" content="https://tyee33.github.io/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="tyee33 · Portfolio">
+<meta name="twitter:description" content="全栈开发 / AI 应用 —— 精选项目、技能栈与技术文章。">
+<meta name="twitter:image" content="https://tyee33.github.io/assets/img/og.png">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/main.css">
+
+<!-- 主题引导：在首次绘制前决定明/暗，避免闪白 -->
+<script>
+(function () {
+  try {
+    var saved = localStorage.getItem('theme');
+    var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    document.documentElement.dataset.theme = saved || (prefersLight ? 'light' : 'dark');
+  } catch (e) {
+    document.documentElement.dataset.theme = 'dark';
+  }
+})();
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#home">跳到主要内容</a>
+
+<!-- 背景层：网格 + 极光 + 噪点 + 暗角，玻璃效果靠它显形 -->
+<div class="bg" aria-hidden="true">
+  <div class="bg__grid"></div>
+  <div class="bg__aurora bg__aurora--a"></div>
+  <div class="bg__aurora bg__aurora--b"></div>
+  <div class="bg__spot" id="bg-spot"></div>
+  <div class="bg__noise"></div>
+  <div class="bg__vignette"></div>
+</div>
+
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+<noscript>
+  <div class="noscript">本站内容由 JavaScript 渲染，请启用 JavaScript 后刷新（或直接在浏览器打开 <code>index.html</code>）。</div>
+</noscript>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <div class="nav__bar glass" data-glass>
+      <a class="brand" href="#home" aria-label="回到顶部">
+        <span class="brand__mark mono" data-bind="initials">TY</span>
+        <span class="brand__text">
+          <span class="brand__name" data-bind="name">tyee33</span>
+          <span class="brand__role" data-bind="role">Portfolio</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="主导航"></nav>
+
+      <div class="nav__actions">
+        <button class="iconbtn" id="theme-toggle" type="button" aria-label="切换明暗主题" title="切换明暗主题">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.6M12 18.8v2.6M2.6 12h2.6M18.8 12h2.6M5.3 5.3l1.9 1.9M16.8 16.8l1.9 1.9M18.7 5.3l-1.9 1.9M7.2 16.8l-1.9 1.9"/></svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.4A8.4 8.4 0 0 1 9.6 4a8.6 8.6 0 1 0 10.4 10.4Z"/></svg>
+        </button>
+        <button class="iconbtn nav__burger" id="nav-burger" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="nav-links">
+          <span class="burger"><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ═══ 首屏 ═══ -->
+  <section id="home" class="section section--hero" aria-labelledby="hero-title">
+    <div class="wrap hero">
+      <div class="hero__lead reveal">
+        <p class="eyebrow mono" id="hero-eyebrow">// portfolio</p>
+        <h1 class="hero__title" id="hero-title"><span data-bind="name">tyee33</span></h1>
+        <p class="hero__role mono" id="hero-role" data-bind="role"></p>
+        <p class="hero__tagline" id="hero-tagline"></p>
+        <div class="hero__cta" id="hero-cta"></div>
+        <ul class="hero__meta" id="hero-meta"></ul>
+      </div>
+
+      <div class="hero__side reveal" data-delay="1">
+        <div class="terminal glass" data-glass aria-hidden="true">
+          <div class="terminal__bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="terminal__title mono" id="terminal-title">~/tyee33</span>
+          </div>
+          <pre class="terminal__body mono" id="terminal-body"></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="mono">SCROLL</span>
+        <span class="scroll-hint__line"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 项目 ═══ -->
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">01 / 项目</p>
+        <h2 class="sec-title" id="projects-title">精选项目</h2>
+        <p class="sec-desc">挑几个能说明问题的作品：做过什么、怎么做的、结果如何。</p>
+      </header>
+      <div class="grid grid--projects" id="projects-list"></div>
+    </div>
+  </section>
+
+  <!-- ═══ 技能 ═══ -->
+  <section id="skills" class="section" aria-labelledby="skills-title">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">02 / 技能</p>
+        <h2 class="sec-title" id="skills-title">技能栈</h2>
+        <p class="sec-desc">按类别归档，熟练度用圆点表示（5 点 = 主力工具）。</p>
+      </header>
+      <div class="skills" id="skills-list"></div>
+    </div>
+  </section>
+
+  <!-- ═══ 经历 ═══ -->
+  <section id="experience" class="section" aria-labelledby="experience-title">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">03 / 经历</p>
+        <h2 class="sec-title" id="experience-title">工作与教育</h2>
+        <p class="sec-desc">时间倒序，最近的在最上面。</p>
+      </header>
+      <ol class="timeline" id="experience-list"></ol>
+    </div>
+  </section>
+
+  <!-- ═══ 文章 ═══ -->
+  <section id="posts" class="section" aria-labelledby="posts-title">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">04 / 文章</p>
+        <h2 class="sec-title" id="posts-title">技术文章</h2>
+        <p class="sec-desc">写作是最诚实的复盘。列表为空时会自动隐藏这一节。</p>
+      </header>
+      <ul class="posts" id="posts-list"></ul>
+    </div>
+  </section>
+
+  <!-- ═══ 关于 ═══ -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">05 / 关于</p>
+        <h2 class="sec-title" id="about-title">关于我</h2>
+      </header>
+      <div class="about" id="about-panel"></div>
+    </div>
+  </section>
+
+  <!-- ═══ 联系 ═══ -->
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="contact glass glass--strong reveal" data-glass>
+        <div class="contact__body">
+          <p class="eyebrow mono">06 / 联系</p>
+          <h2 class="sec-title" id="contact-title">有想法？聊一聊。</h2>
+          <p class="sec-desc" id="contact-desc">无论是合作、招聘还是单纯想交流技术，邮件我都会看。</p>
+          <div class="contact__actions" id="contact-actions"></div>
+          <ul class="socials" id="socials-list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p class="footer__copy" id="footer-copy"></p>
+    <div class="footer__right">
+      <a class="link-quiet mono" href="#home">回到顶部 ↑</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- 内容源：改这些文件就能更新网站，顺序无关 -->
+<script src="data/site.js"></script>
+<script src="data/projects.js"></script>
+<script src="data/skills.js"></script>
+<script src="data/experience.js"></script>
+<script src="data/posts.js"></script>
+<script src="data/about.js"></script>
+<!-- 逻辑 -->
+<script src="assets/js/icons.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
