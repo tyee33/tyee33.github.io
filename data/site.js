@@ -22,7 +22,7 @@ window.PORTFOLIO.site = {
   /* ---- 联系方式 ---- */
   email: 'tye3@qq.com',           // ← 改这里
   resume: 'assets/resume.pdf',           // 简历文件路径（替换 assets/resume.pdf）
-  siteUrl: 'https://tyee33.github.io/',  // 线上地址，用于分享卡片
+  siteUrl: 'https://tyee.is-a.dev/',  // 线上地址，用于分享卡片
 
   /* ---- 导航（id 必须和 index.html 里的 section id 一致）---- */
   nav: [

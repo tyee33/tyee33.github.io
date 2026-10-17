@@ -2,7 +2,7 @@
 <!-- 换了域名或想让搜索引擎重新抓取时，更新 <loc> 与 <lastmod> 即可 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tyee33.github.io/</loc>
+    <loc>https://tyee.is-a.dev/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>

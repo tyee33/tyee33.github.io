@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tyee33.github.io/sitemap.xml
+Sitemap: https://tyee.is-a.dev/sitemap.xml

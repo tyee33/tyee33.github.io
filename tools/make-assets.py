@@ -26,7 +26,7 @@ ASSETS = ROOT / "assets"
 NAME = "tyee33"
 ROLE = "全栈开发 / AI 应用"
 TAGLINE = "把复杂的产品想法，做成简洁、可靠、上线即用的东西。"
-URL_TEXT = "tyee33.github.io"
+URL_TEXT = "tyee.is-a.dev"
 # -----------------------------------------------------------------------------
 
 FONT_CANDIDATES = {

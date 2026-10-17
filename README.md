@@ -2,7 +2,7 @@
 
 极简黑白风格的个人作品集：单页滚动、液体玻璃质感、深色/浅色双主题，**零构建、零依赖、零外部请求**。
 
-线上地址：<https://tyee33.github.io/>
+线上地址：<https://tyee.is-a.dev/>（自定义域名，由仓库根目录的 `CNAME` 文件指定；`https://tyee33.github.io/` 会自动跳转过来）
 
 ---
 
@@ -117,8 +117,12 @@ avatar: 'assets/img/me.jpg',
    ```
 
 3. 仓库 → **Settings → Pages** → Source 选 **Deploy from a branch** → Branch 选 **main** + **/ (root)** → Save。
-4. 等 1–2 分钟，访问 <https://tyee33.github.io/>。
+4. 等 1–2 分钟，访问 <https://tyee.is-a.dev/>（或 <https://tyee33.github.io/>）。
 5. 之后每次 `git push` 都会自动更新，无需再配置。
+
+> **自定义域名**：根目录的 `CNAME` 文件（内容是 `tyee.is-a.dev`）就是域名绑定的唯一来源，**不要删它**，删掉后 GitHub Pages 会立刻解绑域名（访问变 404）。这个域名的 DNS 已经指向 `tyee33.github.io`，由 is-a.dev 提供服务。
+>
+> 想换域名时：改 `CNAME` 的内容 + 在 is-a.dev 那边改 DNS 记录，同时记得把 `index.html` 的 `canonical`/`og:url`/`og:image`、`data/site.js` 的 `siteUrl`、`robots.txt`、`sitemap.xml` 一并改掉。
 
 > 本站是纯静态文件，**不需要 GitHub Actions、不需要 `npm install`**，所以部署方式选"分支"就够了，也最不容易出问题。`.nojekyll` 已就位，下划线开头的文件不会被 Jekyll 吞掉。
 
