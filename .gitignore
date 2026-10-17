@@ -12,3 +12,4 @@ node_modules/
 # 本地临时文件
 *.tmp
 *.bak
+.tmp-*
